@@ -89,7 +89,7 @@ app.post('/adicionar', upload.single('imagem'), (req, res) => {
                 </nav>
                 </div>
                 <footer>
-                    <a href="https://victtorialemos.github.io/Jogador.github.io/">VOLTAR</a>
+                    <a href="https://victtorialemos.github.io/Jogadores.github.io/">VOLTAR</a>
                 </footer>
             </body>
             </html>`);
@@ -116,7 +116,7 @@ app.post('/adicionar', upload.single('imagem'), (req, res) => {
             </div> 
 
             <footer>
-                <a href="https://victtorialemos.github.io/Jogador.github.io/">VOLTAR</a>
+                <a href="https://victtorialemos.github.io/Jogadores.github.io/">VOLTAR</a>
             </footer>
 
             </body>
@@ -176,7 +176,7 @@ app.get("/listar", function (req, res) {
             </div>
         
             <footer>
-                <a href="https://victtorialemos.github.io/Jogador.github.io/">VOLTAR</a>
+                <a href="https://victtorialemos.github.io/Jogadores.github.io/">VOLTAR</a>
             </footer>
         </body>
         
@@ -206,7 +206,7 @@ app.get("/listar", function (req, res) {
             </div> 
 
             <footer>
-                <a href="https://victtorialemos.github.io/Jogador.github.io/">VOLTAR</a>
+                <a href="https://victtorialemos.github.io/Jogadores.github.io/">VOLTAR</a>
             </footer>
 
             </body>
