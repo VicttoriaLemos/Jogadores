@@ -1,0 +1,301 @@
+:root {
+    --cor-azul: #4700D8;
+    --cor-violeta: #c663ff;
+    --cor-rosa: #F900BF;
+    --cor-rosa-bb: #fe98bf;
+    --cor-branca: white;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    text-indent: 20px;
+}
+
+@font-face {
+    font-family: fonte_site;
+    src: url(PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: formulario;
+    src: url(RobotoMono-SemiBold.ttf);
+}
+
+/*home-botões e posição */
+.local {
+    margin-top: 240px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.btn {
+    padding: 15px 50px;
+}
+
+.btn-neon {
+    border: 4px solid var(--cor-azul);
+    border-radius: 50px;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.4s;
+    text-shadow: 0 0 8px hsl(0, 0%, 100%/ 0.3) var(--cor-azul), 0 0 32px;
+    box-shadow: inset 0 0 32px 0 var(--cor-azul), 0 0 32px 0 var(--cor-azul);
+    font-family: fonte_site;
+    color: var(--cor-branca);
+    background-color: var(--cor-azul);
+}
+
+.btn-neon:hover {
+    color: var(--cor-rosa-bb);
+    transition: 0.4s;
+    text-shadow: none;
+    box-shadow: 0 0 10px 5px var(--cor-rosa-bb);
+    box-shadow: inset 0 0 32px 0 var(--cor-azul), 0 0 32px 0 var(--cor-azul);
+}
+
+.btn-neon:hover:after {
+    opacity: 1;
+}
+
+.btn-neon:hover:before {
+    opacity: 1;
+}
+
+.btn-neon:before,
+.btn-neon:after {
+    content: "";
+    position: absolute;
+    opacity: 1;
+    background-color: var(--cor-azul);
+}
+
+.btn-neon:before {
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(64px) rotateX(40deg) scale(1, 0.35);
+    filter: blur(64px);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.btn-neon:after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    box-shadow: 0 0 128px 32px var(--cor-azul);
+    opacity: 0;
+    background-color: var(--cor-azul);
+    transition: opacity 100ms linear;
+    border-radius: 50px;
+}
+
+/*cabeçalho*/
+.bg1 {
+    background-color: var(--cor-azul);
+    color: var(--cor-rosa-bb);
+    height: 40px;
+}
+
+/*body */
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+
+.site-content {
+    flex-grow: 1;
+    background-image: url(fundo.png);
+    background-repeat: repeat;
+    width: 100% 90px;
+}
+
+/*rodapé */
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cor-azul);
+    height: 40px;
+    width: 100%;
+    color: var(--cor-rosa-bb);
+}
+
+footer a {
+    color: var(--cor-rosa-bb);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: fonte_site;
+    padding-top: 15px;
+}
+
+footer a:hover {
+    background-color: var(--cor-azul);
+    height: 62%;
+    margin: 0;
+    width: 100%;
+}
+
+/*escrita do cabeçalho*/
+h1 {
+    width: 100%;
+    color: var(--cor-rosa-bb);
+    text-decoration: none;
+    font-family: fonte_site;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/*escrita de dados inserido e de erro*/
+P {
+    width: 100%;
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-family: fonte_site;
+    font-size: 15px;
+    margin-top: 60px;
+}
+
+/*fundo formulário*/
+.cadastro {
+    width: 700px;
+    height: 550px;
+    margin-left: 300px;
+    background-color: var(--cor-violeta);
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow:  10px 11px 0 10px var(--cor-azul);
+}
+
+/*fomulário*/
+.field {
+    padding: 15px;
+}
+
+
+.field label {
+    display: block;
+    font-size: 15px;
+}
+
+input[type=text],
+[type=password],
+textarea {
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid var(--cor-rosa);
+    outline: none;
+    color: var(--cor-azul);
+    font-family: formulario;
+    line-height: 30px;
+    font-size: 15px;
+    caret-color: var(--cor-rosa);
+
+}
+
+textarea {
+    height: 90px;
+    resize: none;
+}
+
+input[type=submit] {
+    display: block;
+    background-color: var(--cor-rosa);
+    height: 40px;
+    cursor: pointer;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    color: var(--cor-branca);
+    margin-top: 10px;
+    font-family: formulario;
+    margin-bottom: 20px;
+    text-indent: 0;
+}
+
+select {
+    appearance: none;
+    background-color: var(--cor-branca);
+    color: var(--cor-azul);
+    background-image: url(seta.png);
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 300px;
+    border-radius: 15px;
+    border: 3px solid var(--cor-rosa);
+    font-family: formulario;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: var(--cor-azul);
+    font-family: formulario;
+
+}
+
+input[type=file] {
+
+    display: none;
+}
+
+.imagem {
+    background-image: url(foto.png);
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+    width: 200px;
+    color: var(--cor-azul);
+    background-color: var(--cor-branca);
+    border: 3px solid var(--cor-rosa);
+    border-radius: 15px;
+    display: block;
+    cursor: pointer;
+    font-family: formulario;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+table td {
+    font-size: 15px;
+    text-align: center;
+    color: var(--cor-branca);
+    font-family: formulario;
+    border: 1px solid var(--cor-azul);
+    line-height: 20px;
+    background-color: var(--cor-rosa-bb);
+    text-indent: 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+table th {
+    padding: 10px;
+    text-align: center;
+    line-height: 20px;
+    color: var(--cor-rosa-bb);
+    font-family: fonte_site;
+    font-size: 15px;
+    background-color: var(--cor-azul);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
