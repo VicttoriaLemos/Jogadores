@@ -82,14 +82,14 @@ app.post('/adicionar', upload.single('imagem'), (req, res) => {
                 <nav>
                     <ul class="local">
                         <li>
-                            <a class="btn btn-neon" title="Acessar Perfil" href="http://VicttoriaLemos.github.io/Jogador/listar">ACESSAR
+                            <a class="btn btn-neon" title="Acessar Perfil" href="http://VicttoriaLemos.github.io/Jogadores/listar">ACESSAR
                                 PERFIL</a>
                         </li>
                     </ul>
                 </nav>
                 </div>
                 <footer>
-                    <a href="https://victtorialemos.github.io/Jogadores.github.io/">VOLTAR</a>
+                    <a href="https://victtorialemos.github.io/Jogadores/">VOLTAR</a>
                 </footer>
             </body>
             </html>`);
@@ -116,7 +116,7 @@ app.post('/adicionar', upload.single('imagem'), (req, res) => {
             </div> 
 
             <footer>
-                <a href="https://victtorialemos.github.io/Jogadores.github.io/">VOLTAR</a>
+                <a href="https://victtorialemos.github.io/Jogadores/">VOLTAR</a>
             </footer>
 
             </body>
@@ -176,7 +176,7 @@ app.get("/listar", function (req, res) {
             </div>
         
             <footer>
-                <a href="https://victtorialemos.github.io/Jogadores.github.io/">VOLTAR</a>
+                <a href="https://victtorialemos.github.io/Jogadores/">VOLTAR</a>
             </footer>
         </body>
         
@@ -206,7 +206,7 @@ app.get("/listar", function (req, res) {
             </div> 
 
             <footer>
-                <a href="https://victtorialemos.github.io/Jogadores.github.io/">VOLTAR</a>
+                <a href="https://victtorialemos.github.io/Jogadores/">VOLTAR</a>
             </footer>
 
             </body>
