@@ -71,7 +71,7 @@ app.post('/adicionar', upload.single('imagem'), (req, res) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>START</title>
                 <link rel="icon" type="image/x-icon" href="icon.png">
-                <link rel="stylesheet" type="text/css" href="/estilo.css">
+                <link rel="stylesheet" type="text/css" href="public/estilo.css">
             </head>
             <body class="site">
                 <div class="bg1">
@@ -103,7 +103,7 @@ app.post('/adicionar', upload.single('imagem'), (req, res) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>PLAY AGAIN?</title>
                 <link rel="icon" type="image/x-icon" href="icon.png">
-                <link rel="stylesheet" type="text/css" href="/estilo.css">
+                <link rel="stylesheet" type="text/css" href="public/estilo.css">
             </head>
 
              <body class="site">
@@ -141,7 +141,7 @@ app.get("/listar", function (req, res) {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Cadastro Jogador</title>
                 <link rel="icon" type="image/x-icon" href="icon.png">
-                <link rel="stylesheet" type="text/css" href="/estilo.css">
+                <link rel="stylesheet" type="text/css" href="public/estilo.css">
             </head>
             <body class="site">
             <div class="bg1">
@@ -193,7 +193,7 @@ app.get("/listar", function (req, res) {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>PLAY AGAIN?</title>
                 <link rel="icon" type="image/x-icon" href="icon.png">
-                <link rel="stylesheet" type="text/css" href="/estilo.css">
+                <link rel="stylesheet" type="text/css" href="public/estilo.css">
             </head>
 
              <body class="site">
